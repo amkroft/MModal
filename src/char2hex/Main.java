@@ -1,7 +1,17 @@
 package char2hex;
 
-import javax.swing.JOptionPane;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+/*
+ * Candidate test for M*Modal
+ * 
+ * Takes a string of text and converts it to hex values as described
+ *  by M*Modal's candidate test.
+ * 
+ * @author Amanda Kroft
+ */
 public class Main {
 
 	/**
@@ -17,11 +27,16 @@ public class Main {
 		
 		Conversion c = new Conversion(table);
 		
-		//http://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html
-		String holder = (String)JOptionPane.showInputDialog(null,"Enter string to convert:","M*Modal Test",JOptionPane.PLAIN_MESSAGE);
-		
-		JOptionPane.showMessageDialog(null,"Converted String:\n"+c.toHex(holder),"Results",JOptionPane.PLAIN_MESSAGE);
-		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Enter string to convert: ");
+		String holder;
+		try {
+			holder = in.readLine();
+			System.out.println("Converted string:\n\t"+c.toHex(holder));
+		} catch (IOException e) {
+			System.err.println("Error reading your input.  Exiting.");
+			e.printStackTrace();
+		}		
 	}
 	
 }
