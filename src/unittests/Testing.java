@@ -8,6 +8,11 @@ import org.junit.Test;
 
 import char2hex.Conversion;
 
+/*
+ * For testiing all the methods in the Conversion class
+ * 
+ * @author Amanda Kroft
+ */
 public class Testing {
 	
 	Conversion c = new Conversion(new char[]{
