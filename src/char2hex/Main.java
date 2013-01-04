@@ -15,6 +15,10 @@ import java.io.InputStreamReader;
 public class Main {
 
 	/**
+	 * Defines table, grabs string from user to convert,
+	 * uses Conversion class to convert it, and displays
+	 * converted string back to user.
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
