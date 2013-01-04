@@ -76,7 +76,7 @@ public class Conversion {
 		return result;
 	}
 	
-	//Pads in zeros and adds spaces to binary string
+	//Pads in zeros if needed and adds spaces to binary string
 	public String polishString(String s){
 		String result = "";
 		

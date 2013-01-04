@@ -9,7 +9,7 @@ import org.junit.Test;
 import char2hex.Conversion;
 
 /*
- * For testiing all the methods in the Conversion class
+ * For testing all the methods in the Conversion class
  * 
  * @author Amanda Kroft
  */
