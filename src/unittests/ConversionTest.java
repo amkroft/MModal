@@ -13,7 +13,7 @@ import char2hex.Conversion;
  * 
  * @author Amanda Kroft
  */
-public class Testing {
+public class ConversionTest {
 	
 	Conversion c = new Conversion(new char[]{
 			'e','t','a','o','i','n','s','h',
